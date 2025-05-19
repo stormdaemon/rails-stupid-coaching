@@ -1,0 +1,15 @@
+<div class="container py-5">
+  <h1 class="mb-4">Stupid Coaching</h1>
+
+  <div class="mb-3 p-3 border-start border-3 border-secondary bg-light">
+    <p class="mb-1 text-muted"><em><%= @ask %></em></p>
+    <footer class="blockquote-footer mt-1">You</footer>
+  </div>
+
+  <div class="mb-4 p-3 border-start border-3 border-warning bg-warning-subtle">
+    <p class="mb-1 fw-bold"><%= @coach_answer %></p>
+    <footer class="blockquote-footer mt-1">Your coach</footer>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path, class: "link-primary" %>
+</div>
